@@ -507,7 +507,7 @@
         }
 
         .cv-container {
-          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/Wallpaper-4K.jpg);
+          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/Wallpaper-4K.png);
           background-color: transparent;
           background-size: 5px, 5px, cover;
           background-repeat: repeat, repeat, no-repeat;
@@ -691,8 +691,8 @@
         }
 
         .cv-container article .article-body {
-          padding-bottom: 3em;
-          min-height: 10em;
+          padding-bottom: 1em;
+          min-height: 5em;
         }
 
         .cv-container .competency .competency-bar {
