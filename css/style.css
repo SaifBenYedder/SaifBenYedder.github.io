@@ -1,5 +1,79 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Oswald:300,400|PT_Sans:400,700&subset=latin,cyrillic);
-        .css-crop {
+
+@media screen and (max-width: 1200px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .navbar.responsive {
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden ;
+    position: fixed; 
+    top: 0;
+    width: 89%;
+    display: flex;
+    flex-flow: column;
+    z-index: 100;
+    transition: all 1s;
+    opacity:1;
+    left: 5.5%;
+  }
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden ;
+  position: fixed; 
+  top: 0;
+  width: 89%;
+  display: flex;
+  justify-content: space-between ;
+  z-index: 100;
+  transition: all 1s;
+  opacity:1;
+  left:5.5%;
+}
+.hide {
+  opacity:0;
+  left:-100%;
+}
+.navbar a, .show a{
+  float: center;
+  display: block;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PT-Sans";
+  font-weight: 400;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+}     
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.css-crop {
           width: 100%;
           height: 0;
           padding-bottom: 50%;

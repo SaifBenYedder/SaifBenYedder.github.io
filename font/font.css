@@ -19,6 +19,15 @@
         url("fonts/PT-Sans-700/PT-Sans-700.svg#PTSans") format("svg")
     }
 
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+            $('.bottomMenu').fadeIn();
+        } else {
+            $('.bottomMenu').fadeOut();
+        }
+    
+    });
 
 
 

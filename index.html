@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-stripped animated fadeIn cv-fullscreen" dir="ltr">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -10,12 +10,25 @@
   <title>Ben Yedder Saifeddine</title>
 </head>
 
-<body class="cv-viewer">
+<body>
+
+  <div data-bind="sections" class="hide" id="myTopnav">
+    <a href="#text_story">À Propos</a>
+    <a href="#degrees">Formation</a>
+    <a href="#projects">Projets</a>
+    <a href="#internships">Stages</a>
+    <a href="#positions">Vie Associative</a>
+    <a href="#strengths">Compétences</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
   <div>
-    <div class="cv-container animated fadeIn ">
-      <div class="cv-content single-column">
+    <div class="cv-container">
+      <div class="cv-content">
+
         <section id="profile" class="card profile">
-          <article data-bind="content" class="">
+          <article data-bind="content">
             <div class="user-thumb visible" data-bind="thumb">
               <div class="css-crop bg-cover">
               </div>
@@ -597,7 +610,7 @@
               </article>
             </section>
 
-            <section data-bind="sections" id="text_story_dubXlPcadA" class="text_story">
+            <section data-bind="sections" id="contact" class="text_story">
               <div class="col-sm-4 timetable-left"></div>
               <div class="col-sm-8 timetable-right">
                 <header>
@@ -648,13 +661,31 @@
     </div>
   </div>
 
-  <footer class="vcv-footer">
-    <p>
-      <time class="updated-at" datetime="2017-10-10T22:50:15-09:00" pubdate="pubdate">
-        Octobre, 2017
-      </time>
-    </p>
-  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+
+  <script>
+    myTopnav = document.getElementById("myTopnav");
+    var myScrollFunc = function () {
+      var y = window.scrollY;
+      if (y >= 430) {
+        myTopnav.className = "navbar"
+      } else {
+        myTopnav.className = "hide"
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
+
 </body>
 
 </html>
