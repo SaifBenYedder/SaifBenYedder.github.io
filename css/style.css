@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 1200px){
   .navbar.responsive {
-    background: rgba(0, 0, 0, 0.9);
+    background: black;
     overflow: hidden ;
     position: fixed; 
     top: 0;
