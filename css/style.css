@@ -83,7 +83,7 @@
         .css-crop.bg-cover {
           background-size: cover;
           background-position: center;
-          background-image: url("../images/Saif.png")
+          background-image: url("../images/Saif.jpg")
         }
 
         .css-crop.bg-contain {
@@ -729,7 +729,7 @@
 
         .cv-container .user-thumb,
         .cv-container .cv-content .user-thumb.visible {
-          width: 150px;
+          width: 200px;
           border: 5px solid rgba(0, 0, 0, 0.3);
           border-radius: 100%;
           display: inline-block;
