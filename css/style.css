@@ -607,7 +607,7 @@ img{
         }
 
         .cv-container {
-          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/Background.jpg);
+          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/images.jpg);
           background-color: transparent;
           background-size: 5px, 5px, cover;
           background-repeat: repeat, repeat, no-repeat;
