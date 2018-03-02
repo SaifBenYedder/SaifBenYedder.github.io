@@ -73,6 +73,38 @@
   display: none;
 }
 
+.drapeaux{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.langue{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.langue img{
+  width: 180px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.langage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.langage img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
 .css-crop {
           width: 100%;
           height: 0;
@@ -83,7 +115,7 @@
         .css-crop.bg-cover {
           background-size: cover;
           background-position: center;
-          background-image: url("../images/Saif.jpg")
+          background-image: url("../images/Saif.png")
         }
 
         .css-crop.bg-contain {
@@ -581,7 +613,7 @@
         }
 
         .cv-container {
-          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/Wallpaper.jpg);
+          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/Background.jpg);
           background-color: transparent;
           background-size: 5px, 5px, cover;
           background-repeat: repeat, repeat, no-repeat;
