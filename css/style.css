@@ -35,7 +35,7 @@
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
   overflow: hidden ;
   position: fixed; 
   top: 0;
@@ -607,8 +607,7 @@ img{
         }
 
         .cv-container {
-          background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(../images/images.jpg);
-          background-color: transparent;
+          background-color: rgb(65,105,225);
           background-size: 5px, 5px, cover;
           background-repeat: repeat, repeat, no-repeat;
           background-position: center center;
