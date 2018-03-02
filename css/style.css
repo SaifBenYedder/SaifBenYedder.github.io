@@ -86,12 +86,6 @@
   text-align: center;
 }
 
-.langue img{
-  width: 180px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
 .langage{
   display: flex;
   flex-direction: column;
@@ -99,7 +93,7 @@
   text-align: center;
 }
 
-.langage img{
+img{
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
